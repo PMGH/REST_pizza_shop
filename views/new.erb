@@ -1,0 +1,28 @@
+<div>
+  <form action="/pizzas" method="POST">
+    <!-- this is a label for...something with the id = firstName -->
+    <label for="firstName">First Name:</label>
+    <!-- input name should match our model, id should match label for -->
+    <input type="text" required="required" name="first_name" id="firstName" />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" required="required" name="last_name" id="lastName" />
+
+    <label for="pizzaSelect">Select a pizza:</label>
+    <select name="topping" id="pizzaSelect">
+      <option value="Scrummy">Scrummy</option>
+      <option value="Strawberry">Strawberry</option>
+      <option value="Italian Sausage">Italian Sausage</option>
+      <option value="Pepperoni">Pepperoni</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" required="required" min=1 max=99 name="quantity" id="quantity" />
+
+    <!-- value is the default text -->
+    <input type="submit" value="Submit" class="button">
+
+    <!-- hash = { 'first_name' => first_name, 'last_name' => last_name, 'topping' => topping, quantity => quantity } -->
+
+  </form>
+</div>

@@ -1,0 +1,10 @@
+<!-- for each pizza in @pizzas -->
+<div>
+  <% @pizzas.each do |pizza| %>
+  <article>
+    <p>Name: <%= pizza.pretty_name() %></p>
+    <p>Order: <%= pizza.quantity() %>x <%= pizza.topping() %></p>
+    <a class="button" href="/pizzas/<%= pizza.id() %>">Show order</a>
+  </article>
+  <% end %>
+</div>

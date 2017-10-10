@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Shop</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="orders_bg">
+  <nav>
+    <ul id="navigation">
+      <li class="nav_item"><a class="nav_link" href="/pizzas">Home</a></li>
+      <li class="nav_item"><a class="nav_link" href="/pizzas/new">Order a pizza</a></li>
+    </ul>
+  </nav>
+  <!-- yield to the relevant erb file -->
+  <%= yield %>
+</body>
+</html>
